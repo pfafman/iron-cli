@@ -1,11 +1,29 @@
-Template.<%= name %>.events {}
+#
+#  <%= name %>: functions
+#
 
-Template.<%= name %>.helpers {}
+
+DEBUG = true
 
 # <%= name %>: Lifecycle Hooks 
-Template.<%= name %>.created = ->
+Template.<%= name %>.onCreated ->
   
-Template.<%= name %>.rendered = ->
+
+Template.<%= name %>.onRendered ->
   
-Template.<%= name %>.destroyed = ->
+
+Template.<%= name %>.onRestroyed ->
   
+
+Template.<%= name %>.helpers
+  foo: ->
+    # Return Something
+
+
+Template.<%= name %>.events
+  'click': (event, tmpl) ->
+    # Do Somthing
+
+
+
+
